@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <link rel="stylesheet" type="text/css" href="carguessinggame.css">
+    <script src="carguessinggame.js" async></script>
+    <title>Car Logo Game</title>
+</head>
+<body>
+<!-- 
+<h1 class="titel">Car Logo Game</h1> -->
+
+<br><br><br>
+
+<div class="overlay-text visible">
+    Click to Start
+</div>
+<div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+</div>
+<div id="victory-text" class="overlay-text">
+   VICTORY!
+    <span class="overlay-text-small">Click to Restart</span>
+</div>
+<br><br>
+
+<div class="game-container">
+    <div class="game-info-container">
+        <div class="game-info">
+            Time <span id="time-remaining">100</span>
+        </div>
+    <div class="game-info">
+            Flips <span id="flips">0</span>
+    </div>
+</div>
+
+<div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/ferrari.jpg">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/ferrari.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/maserati.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/maserati.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/bugatti.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/bugatti.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/porsche.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/porsche.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/astonmartin.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/astonmartin.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/tesla.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/tesla.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/lamborghini.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/lamborghini.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/rollsroyce.jpg">
+        </div>
+    </div><div class="card">
+        <div class="card-back card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb.jpg"> -->
+            <img class="spider" src="images/cobweb2.jpg">
+        </div>
+
+        <div class="card-front card-face">
+            <!-- <img class="cob-web cob-web-top-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-top-right" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-left" 
+            src="images/cobweb3.jpg">
+            <img class="cob-web cob-web-bottom-right" 
+            src="images/cobweb3.jpg"> -->
+            <img class="card-value" src="images/rollsroyce.jpg">
+        </div>
+
+    </div>
+
+</body>
+</html>
+ 
